@@ -78,18 +78,18 @@ Login Screen Features
 **Project Folder Structure**
 
 **project/**
-├── main_project.py         # Main application GUI logic
-├── mail_messages.py        # Email sending and message formatting
-├── project_table.py        # Database table creation and query logic
-├── My_bank_Database.sqlite # SQLite database storing all records
-└── Images/                 # Folder containing images/icons/profile photos
+**├── main_project.py**         # Main application GUI logic
+**├── mail_messages.py**        # Email sending and message formatting
+**├── project_table.py**        # Database table creation and query logic
+**├── My_bank_Database.sqlite** # SQLite database storing all records
+**└── Images/**                 # Folder containing images/icons/profile photos
 
 
 ---
 
-Technologies Used
+**Technologies Used**
 
-Component	Technology
+**Component**	**Technology**
 
 Programming	Python 3.x
 GUI Framework	Tkinter
@@ -175,7 +175,7 @@ Input Validation	Regex, Manual
 
 ---
 
-Email Notification System
+**Email Notification System**
 
 When a new account is opened, the system sends:
 
@@ -192,7 +192,7 @@ Uses smtplib for sending secure messages
 
 ---
 
-Security Features
+**Security Features**
 
 CAPTCHA validation at login screen
 
