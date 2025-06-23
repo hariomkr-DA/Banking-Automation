@@ -1,0 +1,92 @@
+Project category
+	desktop project
+Project Title
+	Banking Automation
+User Types
+	user
+	admin
+
+Roles of Admin:
+---------------------
+	1.Open New Account
+
+	2.Delete Existing Account
+
+	3.View Specific or All Accounts
+
+	4.Add Balance to a User Account
+
+	5.Update System Email or Password
+
+	6.View User Issues or Complaints
+
+	7.Logout
+
+Roles of User:
+------------------
+	1.Profile Picture Display
+
+	2.Welcome Message
+
+	3.View Personal Account Details include password or balance
+
+	4.Update Personal Information
+
+	5.Withdraw Money
+
+	6.Transfer Money to Another Account
+
+	7.View Transaction History
+
+	8.Logout
+
+Front End Libraries
+	tkinter(standard library)
+	pillow(3rd party)
+	tktable(3rd party)
+	smtplib (3rd party)
+BackEnd(database)
+	sqlite
+
+Tables:
+---------
+	1.user
+		Name 			text
+		Gender 			text
+		DOB 			date
+		Mob_No 			text
+    		Email 			text
+		Aadhaar 		text
+		Pan 			text
+		Ac_number 		integer primary key AUTOINCREMENT
+    		Password 		text
+		IFSC 			text default 'ABC123'
+		Ac_type 		text
+		Balance 		decimal(20,2) default 0
+		Opened_Date 		date default  CURRENT_TIMESTAMP
+    					
+	
+	2.stmts
+		Ac_number 		integer
+    		ref_no 			text 
+		mode 			text
+		amount 			decimal(20,2)
+		desc 			text
+    		date 			date default  CURRENT_TIMESTAMP 
+		
+workflow:
+-------------
+	>first admin need to login using A/c No.=0 and Password=admin
+	>then admin change update system Email or App Password
+	>acn,initial pass sent to customer email
+	
+	>user(customer) can login using provides ACN & Pass in email
+	>user can change pass & perform various activities
+
+
+
+
+
+
+
+
