@@ -77,7 +77,7 @@ Tables:
 workflow:
 -------------
 	>first admin need to login using A/c No.=0 and Password=admin
-	>then admin change update system Email or App Password
+	>then admin  update system Email or App Password
 	>acn,initial pass sent to customer email
 	
 	>user(customer) can login using provides ACN & Pass in email
